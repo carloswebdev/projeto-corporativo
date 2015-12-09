@@ -14,7 +14,7 @@
 		<junit.version>4.11</junit.version>
 		<javaee.version>7.0</javaee.version>
 		<hibernate.version>4.3.11.Final</hibernate.version>
-		<mysql.version>5.1.37</mysql.version>
+		<mysql.version>5.1.19</mysql.version>
 		<jsf.version>2.2.2</jsf.version>
 		<primefaces.version>5.3</primefaces.version>
 	</properties>
