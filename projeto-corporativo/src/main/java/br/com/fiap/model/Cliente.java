@@ -45,6 +45,10 @@ public class Cliente implements Serializable {
 
 	private String telefone;
 
+	//bi-directional many-to-one association to Login
+	@OneToMany(mappedBy="cliente")
+	private List<Login> logins;
+
 	//bi-directional many-to-one association to Pedido
 	@OneToMany(mappedBy="cliente")
 	private List<Pedido> pedidos;
@@ -138,6 +142,28 @@ public class Cliente implements Serializable {
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
+	}
+
+	public List<Login> getLogins() {
+		return this.logins;
+	}
+
+	public void setLogins(List<Login> logins) {
+		this.logins = logins;
+	}
+
+	public Login addLogin(Login login) {
+		getLogins().add(login);
+		login.setCliente(this);
+
+		return login;
+	}
+
+	public Login removeLogin(Login login) {
+		getLogins().remove(login);
+		login.setCliente(null);
+
+		return login;
 	}
 
 	public List<Pedido> getPedidos() {
