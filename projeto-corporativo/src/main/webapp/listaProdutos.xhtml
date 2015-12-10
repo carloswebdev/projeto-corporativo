@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Produtos Menores que 1000 WebService</title>
+</h:head>
+<h:body>
+			<h:form id="tableProduto">
+				<h:panelGrid columns="2">
+					<f:facet name="header">
+						<h2>
+							<h:outputText value="Produtos Menores que 1000 WebService SOAP" />
+						</h2>
+					</f:facet>
+					<h:commandButton value="Cadastrar" action="#{produtoBean.add}" />
+				</h:panelGrid>
+			</h:form>
+</h:body>
+</html>

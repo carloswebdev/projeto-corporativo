@@ -4,7 +4,4 @@
         http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
        bean-discovery-mode="all">
        
-       <interceptors>
-<!--        		<class>br.com.fiap.interceptors.TransacionalInterceptor</class> -->
-       </interceptors>
 </beans> 
