@@ -22,20 +22,20 @@ public class ProdutoBean {
 	private ProdutoDao produtoDao;
 
 	private Produto produto;
-	
+
 	@PostConstruct
 	public void init() {
 		produto = new Produto();
 	}
-	
+
 	public Produto getProduto() {
 		return produto;
 	}
-	
+
 	public void setProduto(Produto produto) {
 		this.produto = produto;
 	}
-	
+
 	public void add() {
 		FacesContext context = FacesContext.getCurrentInstance();
 		FacesMessage msg = new FacesMessage();
