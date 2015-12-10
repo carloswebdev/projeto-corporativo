@@ -21,7 +21,7 @@ public class Dao<T> implements Serializable {
 
 	private final Class<T> classe;
 
-	// Esta sendo injetado aqui para quando as classes filhas utilizarem os mÃ©todos herdados
+	// Esta sendo injetado aqui para quando as classes filhas utilizarem os métodos herdados
 	@Inject
 	private EntityManager em;
 
@@ -29,10 +29,10 @@ public class Dao<T> implements Serializable {
 		this.classe = classe;
 	}
 
-	public Dao(Class<T> classe, EntityManager em) {
-		this.classe = classe;
-		this.em = em;
-	}
+//	public Dao(Class<T> classe, EntityManager em) {
+//		this.classe = classe;
+//		this.em = em;
+//	}
 
 	public void adiciona(T entidade) {
 		em.persist(entidade);

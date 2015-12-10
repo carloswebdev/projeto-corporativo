@@ -13,7 +13,7 @@ public class JPAUtil {
 	// Usa CDI para criar Factory, tempo de vida "Aplicacao"
 	@Produces @ApplicationScoped
 	public EntityManagerFactory criaFactory() {
-		return Persistence.createEntityManagerFactory("cadastroJPA");
+		return Persistence.createEntityManagerFactory("projetoCorporativoPU");
 	}
 	
 	// Usa CDI para criar EntityManager, tempo de vida "Requisicao"
